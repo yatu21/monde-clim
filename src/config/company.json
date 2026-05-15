@@ -1,0 +1,58 @@
+{
+  "name": "MONDE CLIM",
+  "tagline": "Experts en Climatisation au Maroc",
+  "description": "Solutions HVAC professionnelles pour particuliers et entreprises au Maroc.",
+  "founded": "2016",
+
+  "contact": {
+    "phone": "+212600000000",
+    "phoneDisplay": "+212 600 000 000",
+    "whatsapp": "+212600000000",
+    "email": "contact@mondeclim.ma",
+    "website": "https://mondeclim.ma"
+  },
+
+  "address": {
+    "street": "Boulevard Hassan II, Maarif",
+    "city": "Casablanca",
+    "country": "Maroc",
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215004.5068254895!2d-7.688754!3d33.589886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+  },
+
+  "hours": [
+    { "day": "Lundi – Vendredi", "hours": "08:00 – 19:00" },
+    { "day": "Samedi",           "hours": "09:00 – 17:00" },
+    { "day": "Dimanche",         "hours": "Urgences uniquement" }
+  ],
+
+  "social": {
+    "facebook":  "https://facebook.com/mondeclim",
+    "instagram": "https://instagram.com/mondeclim",
+    "linkedin":  "https://linkedin.com/company/mondeclim",
+    "youtube":   ""
+  },
+
+  "coverage": [
+    "Casablanca", "Rabat", "Marrakech", "Fès",
+    "Tanger", "Agadir", "Meknès", "Oujda",
+    "Kénitra", "Tétouan", "Safi", "El Jadida"
+  ],
+
+  "stats": [
+    { "label": "Clients satisfaits",   "value": 500,  "suffix": "+" },
+    { "label": "Années d'expérience",  "value": 8,    "suffix": "+" },
+    { "label": "Installations",        "value": 1200, "suffix": "+" },
+    { "label": "Projets commerciaux",  "value": 50,   "suffix": "+" }
+  ],
+
+  "brands": ["Gree", "Carrier", "Daikin", "Mitsubishi", "Samsung", "LG", "Midea"],
+
+  "certifications": [
+    "Techniciens certifiés Gree",
+    "Partenaire officiel Daikin",
+    "Techniciens certifiés Carrier",
+    "Certification fluides frigorigènes F-Gas",
+    "Formation constructeur Mitsubishi",
+    "Habilitation électrique BR/BC"
+  ]
+}

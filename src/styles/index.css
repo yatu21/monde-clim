@@ -1,0 +1,136 @@
+/* ============================================================
+   MONDE CLIM — GLOBAL STYLES
+   ============================================================
+   This file must be imported first in main.tsx.
+   Google Fonts @import MUST be the very first rule.
+
+   BRAND COLORS (edit the CSS variables in :root and .dark below):
+   - Dark Blue:     #0A2540  (primary background, navbar)
+   - Electric Blue: #1E88E5  (accents, CTAs, highlights)
+   - Silver:        #C0C0C0  (secondary accent)
+   - White:         #FFFFFF  (text on dark backgrounds)
+   ============================================================ */
+
+/* Google Fonts — Sora (display headings) + Inter (body text) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+/* Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* ============================================================
+   TAILWIND THEME OVERRIDES
+   Map CSS variables to Tailwind color tokens
+   ============================================================ */
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  /* Font families */
+  --font-sans: var(--app-font-sans);
+  --font-display: var(--app-font-display);
+  --font-mono: var(--app-font-mono);
+
+  /* Border radius scale */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ============================================================
+   LIGHT MODE VARIABLES
+   Edit these to change the light theme colors
+   ============================================================ */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 210 73% 15%;          /* #0A2540 dark blue */
+  --card: 0 0% 100%;
+  --card-foreground: 210 73% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 73% 15%;
+  --primary: 210 73% 15%;             /* Dark Blue */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 208 79% 51%;           /* Electric Blue #1E88E5 */
+  --secondary-foreground: 0 0% 98%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 0 0% 75%;                 /* Silver #C0C0C0 */
+  --accent-foreground: 210 73% 15%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 210 73% 15%;
+  --radius: 0.5rem;
+
+  /* Font stacks — change to swap fonts */
+  --app-font-sans: 'Inter', sans-serif;
+  --app-font-display: 'Sora', sans-serif;
+  --app-font-mono: Menlo, monospace;
+}
+
+/* ============================================================
+   DARK MODE VARIABLES
+   Edit these to change the dark theme colors
+   ============================================================ */
+.dark {
+  --background: 210 73% 8%;           /* Very dark blue */
+  --foreground: 0 0% 98%;
+  --card: 210 73% 12%;
+  --card-foreground: 0 0% 98%;
+  --popover: 210 73% 12%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 208 79% 51%;             /* Electric Blue in dark mode */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 210 73% 20%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 210 73% 18%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 0 0% 75%;
+  --accent-foreground: 210 73% 15%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 210 73% 20%;
+  --input: 210 73% 20%;
+  --ring: 212.7 26.8% 83.9%;
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  /* Apply display font (Sora) to all headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
